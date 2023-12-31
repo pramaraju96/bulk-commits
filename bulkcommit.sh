@@ -42,8 +42,8 @@ read totalCommitCount
 
 if [ ${totalCommitCount} -le 0 ]; then
     echo "Zero or Negative Input, No commits to happen."
-elif [ ${totalCommitCount} -gt 5000 ]; then
-    echo "Input is more than 5000, Please input a positive integer less than 5000"
+elif [ ${totalCommitCount} -gt 25000 ]; then
+    echo "Input is more than 25000, Please input a positive integer less than 25000"
 else
     echo "'${totalCommitCount}' new commits in progress."
     createNewCommits
